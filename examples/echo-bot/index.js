@@ -10,6 +10,7 @@ const cp = require('child_process');
 const config = {
   channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
   channelSecret: process.env.CHANNEL_SECRET,
+  test: ''
 };
 
 // base URL for webhook server
