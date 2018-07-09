@@ -9,8 +9,7 @@ const cp = require('child_process');
 // create LINE SDK config from env variables
 const config = {
   channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
-  channelSecret: process.env.CHANNEL_SECRET,
-  test: ''
+  channelSecret: process.env.CHANNEL_SECRET
 };
 
 // base URL for webhook server
