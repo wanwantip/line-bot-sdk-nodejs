@@ -25,7 +25,9 @@ const app = express();
 // serve static and downloaded files
 app.use('/static', express.static('static'));
 app.use('/downloaded', express.static('downloaded'));
-
+app.get('/', function (req, res) {
+  res.send('Hello bot')
+})
 // webhook callback
 app.post('/callback', line.middleware(config), (req, res) => {
   // req.body.events should be an array of events
